@@ -1,20 +1,20 @@
 class CSharp
 {
-    public string DisplayText = "C#";
+    public string Text = "C#";
 
     public void PrintText()
     {
-        Console.WriteLine(DisplayText);
+        System.Console.WriteLine(Text);
     }
 }
 
 class Programming
 {
-    public string DisplayText = "programming";
+    public string Text = "programming";
 
     public void PrintText()
     {
-        Console.WriteLine(DisplayText);
+        System.Console.WriteLine(Text);
     }
 }
 
@@ -22,13 +22,13 @@ class MainClass
 {
     public static void Main(string[] args)
     {
-        CSharp cSharpObject = new CSharp();
-        Programming programmingObject = new Programming();
+        CSharp cObject = new CSharp();
+        Programming pObject = new Programming();
 
-        cSharpObject.PrintText();  // Prints "C#"
-        programmingObject.PrintText();  // Prints "programming"
+        Object.PrintText(); 
+        pObject.PrintText();  
 
-        // Combine the strings (optional)
-        Console.WriteLine($"{cSharpObject.DisplayText} {programmingObject.DisplayText}");  // Prints "C# programming"
+       
+        System.Console.WriteLine("{0} {1}",Object.Text,pObject.Text);  //  "C# programming"
     }
 }
